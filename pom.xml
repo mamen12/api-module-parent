@@ -13,6 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>api-module-parent</name>
 	<description>Sigmatech API Parent</description>
+	<packaging>pom</packaging>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -48,6 +49,15 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.commons</groupId>
+				<artifactId>beans</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>
@@ -59,5 +69,6 @@
 	</build>
 	<modules>
 		<module>api-module-account</module>
+		<module>api-module-transaction</module>
 	</modules>
 </project>
