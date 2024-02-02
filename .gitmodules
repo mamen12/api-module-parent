@@ -1,3 +1,6 @@
 [submodule "api-module-account"]
 	path = api-module-account
 	url = https://github.com/mamen12/api-module-account
+[submodule "api-module-transaction"]
+	path = api-module-transaction
+	url = https://github.com/mamen12/api-module-transaction
